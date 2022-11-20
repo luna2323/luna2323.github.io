@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    @import url("reset.css");
+
+    * {
+        box-sizing: border-box
+    }
+
+    .header-font {
+        font-family: Microsoft JhengHei;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-content-end {
+        justify-content: flex-end;
+    }
+
+    .margin {
+        margin-right: 35px;
+        margin-top: 35px;
+    }
+
+    .header-list-margin {
+        margin-left: 250px;
+    }
+
+    .header-list-searchicon-margin {
+        margin: 20px;
+    }
+
+    .header-img-margin {
+        margin-left: 35px;
+    }
+
+    .padding {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .text-20 {
+        font-size: 20px;
+
+    }
+
+    .text-primary {
+        color: #016364;
+    }
+
+    .align-items-end {
+        align-items: flex-end;
+    }
+
+    svg {
+        margin-left: 20px;
+        margin-top: 5px;
+        fill: #016364;
+    }
+
+    .underline {
+        border-bottom: 4px solid transparent;
+        transition: border 0.3s;
+    }
+
+    .underline:hover {
+        border-bottom: 10px solid #04a4a7;
+
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .img-size {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .container {
+        padding-top: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-img-size {
+        height: 284px;
+        width: 429px;
+
+    }
+
+    section {
+        background-color: #F5F5F5;
+        display: flex
+    }
+
+    dl {
+        border: 1px solid #d7d7d7;
+        background-color: #ffffff;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+
+    }
+
+    dl:hover {
+        box-shadow: 10px 10px 10px #575757;
+        transform: perspective(1px) translate(0) scale(1.05);
+        transition: all 0.6s;
+    }
+
+    dd {
+        width: 429px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .date {
+        font-family: Microsoft JhengHei;
+        font-size: 1.125rem;
+        font-weight: bold;
+        height: 25px;
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #575757;
+
+
+    }
+
+    .ddofpcontainer {
+        font-family: Microsoft JhengHei;
+        font-weight: bold;
+        font-size: 1.25rem;
+        height: 40px;
+        color: #7a5937;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-font d-flex justify-content-end margin padding">
+            <a class="padding" href="">網站導覽</a>
+            <a class="padding" href="">菁英招募</a>
+            <a class="padding" href="">公告</a>
+            <a class="padding" href="">English</a>
+        </div>
+        <div class=" header-font h1-header-margin d-flex align-items-end">
+            <h1>
+                <img class="header-img-margin" src="./photo1.svg" alt="">
+            </h1>
+            <ul class="d-flex margin  ">
+                <li class="cursor-pointer underline text-20 margin text-primary header-list-margin">尖端科技</li>
+                <li class="cursor-pointer underline text-20 margin text-primary">產業服務</li>
+                <li class="cursor-pointer underline text-20 margin text-primary">國際合作</li>
+                <li class="cursor-pointer underline text-20 margin text-primary">新聞中心</li>
+                <li class="cursor-pointer underline text-20 margin text-primary">關於我們</li>
+                <li class="cursor-pointer underline text-20 margin text-primary">線上展示館</li>
+                <li class="cursor-pointer text-20 margin text-primary header-list-searchicon-margin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 20 20">
+                        <path
+                            d="M12.14 4.18a5.504 5.504 0 0 1 .72 6.89c.12.1.22.21.36.31c.2.16.47.36.81.59c.34.24.56.39.66.47c.42.31.73.57.94.78c.32.32.6.65.84 1c.25.35.44.69.59 1.04c.14.35.21.68.18 1c-.02.32-.14.59-.36.81s-.49.34-.81.36c-.31.02-.65-.04-.99-.19c-.35-.14-.7-.34-1.04-.59c-.35-.24-.68-.52-1-.84c-.21-.21-.47-.52-.77-.93c-.1-.13-.25-.35-.47-.66c-.22-.32-.4-.57-.56-.78c-.16-.2-.29-.35-.44-.5a5.503 5.503 0 0 1-6.44-.98c-2.14-2.15-2.14-5.64 0-7.78a5.498 5.498 0 0 1 7.78 0zm-1.41 6.36a3.513 3.513 0 0 0 0-4.95a3.495 3.495 0 0 0-4.95 0a3.495 3.495 0 0 0 0 4.95a3.495 3.495 0 0 0 4.95 0z" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="section1">
+        <img class="img-size"
+            src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=10001&fd=ADBenner_Pics&Pname=ces%202023_banner_主題網站.jpg"
+            alt="">
+    </section>
+    <section class="container d-flex">
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=9FDF56CF-9AB5-4CDC-B929-8E70A2984FF1_20221109_54_01.JPG"
+                alt="">
+
+            <dd>
+                <p class="date">
+                    2022-12-13
+                </p>
+                <p class="ddofpcontainer">
+                    經濟部以創新科技推動智慧生活新應用　工研院運用AI巡檢漏匯聚產業巨擘 生活新應用應用
+                </p>
+            </dd>
+        </dl>
+
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=CB881440-5D32-4A27-B450-8F30139261B2_圖1_20221108_56.jpg"
+                alt="">
+            <dd>
+                <p class="date">
+                    2022-11-14
+                </p>
+                <p class="ddofpcontainer">
+                    工研院院士倡議：成立淨零碳排永續基金　促淨零技術...
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=A5804400-A321-4873-A58C-D7486113140E_圖一_20221114_01.jpg"
+                alt="">
+            <dd>
+                <p class="date">
+                    2022-11-11
+                </p>
+                <p class="ddofpcontainer">
+                    工研院頒第十一屆新任院士　匯聚產業巨擘　蔡總統期許以科技力提...
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=A5804400-A321-4873-A58C-D7486113140E_圖一_20221114_01.jpg"
+                alt="">
+            <dd>
+                <p class="date">
+                    2022-11-11
+                </p>
+                <p class="ddofpcontainer">
+                    工研院頒第十一屆新任院士　匯聚產業巨擘　蔡總統期許以科技力提...
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=A5804400-A321-4873-A58C-D7486113140E_圖一_20221114_01.jpg"
+                alt="">
+            <dd>
+                <p class="date">
+                    2022-11-11
+                </p>
+                <p class="ddofpcontainer">
+                    工研院頒第十一屆新任院士　匯聚產業巨擘　蔡總統期許以科技力提...
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <img class="container-img-size"
+                src="https://www.itri.org.tw/WebTools/Thumbnail.ashx?SiteID=1&MmmID=1036276263153520257&fd=NewsLetter_Pics&Pname=A5804400-A321-4873-A58C-D7486113140E_圖一_20221114_01.jpg"
+                alt="">
+            <dd>
+                <p class="date">
+                    2022-11-11
+                </p>
+                <p class="ddofpcontainer">
+                    工研院頒第十一屆新任院士　匯聚產業巨擘　蔡總統期許以科技力提...
+                </p>
+            </dd>
+        </dl>
+
+
+
+    </section>
+</body>
+
+</html>
